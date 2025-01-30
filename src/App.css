@@ -1,0 +1,625 @@
+/* src/styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  /* overflow: hidden; */
+  /* Prevent scrolling when the user moves the mouse */
+}
+
+.app {
+  min-height: 90vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 0;
+  background-color: #333;
+  /* position: relative; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+}
+
+.portfolio {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Navbar Styles */
+.navbar ul {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  column-gap: 5px;
+  justify-content: space-between;
+
+}
+
+.navbar li {
+  transition: 1s ease-in-out;
+}
+
+.navbar a {
+  padding: .1rem .3rem;
+  border-radius: .3rem;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 1s ease-in-out;
+}
+
+.navbar>ul>li:hover {
+  transform: scale(1.1);
+}
+
+
+.active {
+  background-color: rgb(210, 168, 63);
+}
+
+/* Home Section */
+
+
+
+.home {
+  perspective: 1000px;
+  /* Set the perspective for 3D space */
+  text-align: center;
+  margin-top: 75px;
+
+}
+
+.profile-main {
+  margin: 0 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  /* background-color: gray; */
+}
+
+.profile-container {
+  margin-bottom: 20px;
+  background-color: gray;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+
+}
+
+/* Profession Text (p) */
+.profession {
+
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 33%);
+  margin-bottom: 20px;
+  transition: transform 0.1s ease-out;
+}
+
+.hColor {
+  width: 50%;
+  margin: auto;
+}
+
+
+input {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+}
+
+/* Button */
+button {
+  padding: 5px 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.cv-page {
+
+  top: 100vh;
+}
+
+/* Name Text (h1) */
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.1s ease-out;
+}
+
+/* Form Styles */
+.contact {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact>h2 {
+  align-self: center
+}
+
+form {
+  margin: auto;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form>input {
+  width: 30vw;
+  /* background: green; */
+}
+
+form>textarea {
+  width: 30vw;
+  height: 30vh;
+  padding: .5rem;
+
+  font-size: 1rem;
+}
+
+/* Projects Section */
+.project-container {
+  margin: auto;
+
+  /* background-color: lightgray; */
+  width: 90vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+
+}
+
+.projects {
+
+  margin-top: .2rem;
+  width: 25vw;
+  background-color: mediumpurple;
+  text-indent: .5rem;
+  border-radius: .5rem;
+  box-shadow: 6px 5px 10px rgb(70, 54, 54);
+  text-align: center;
+
+}
+
+.project1 {
+  margin-top: 3rem;
+  align-self: flex-start;
+}
+
+.project3 {
+  align-self: flex-end;
+}
+
+.projects>h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.projects>ul {
+  margin-bottom: 3rem;
+}
+
+.projects li {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 15px;
+  list-style: none;
+
+}
+
+.projects li:hover {
+  background-color: rgb(126, 123, 123);
+}
+
+.projects>ul>li>a {
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+.projects>ul>li>a:hover {
+  cursor: pointer;
+
+
+}
+
+/* AI */
+
+.chatbot {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Horizontal Color */
+.hColor {
+  width: 60vw;
+  height: .5rem;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+/* About */
+
+.about {
+  width: 80%;
+  margin: auto;
+
+}
+
+.about>h2 {
+  margin: 65px 0 35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about>p {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  text-align: justify;
+
+}
+
+.about>p>span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.error {
+  background-color: red;
+  font-size: 1rem;
+  color: white;
+
+  border-radius: .3rem;
+  text-align: center;
+}
+
+/* CV Page */
+.cv-container {
+  margin: auto;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.cv-left {
+  width: 50vw;
+  margin-right: 55px;
+}
+
+.underline {
+  width: 100%;
+  padding: .1rem;
+  background-color: black;
+}
+
+.underline-subline {
+  margin-top: 1.5rem;
+
+  width: 100%;
+  /* padding: .1rem; */
+  border: 1px dotted gray;
+  /* background-color: black; */
+}
+
+.cv-highlight>ul {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cv-highlight>ul>li {
+
+  list-style-position: inside;
+}
+
+.experience>ul>li {
+
+  list-style-position: inside;
+}
+
+.date {
+  height: 50px;
+
+}
+
+.cv-right {
+  width: 30vw;
+}
+
+.education {
+  margin-bottom: 1.5rem;
+
+}
+
+.education-p1 {
+  margin-top: 1.5rem;
+  margin-bottom: .1rem;
+}
+
+.strengths {
+  margin-bottom: 1.5rem;
+}
+
+.strengths>ul>li {
+  margin-top: 1.5rem;
+  list-style-position: inside;
+}
+
+.language-btn {
+  padding: .3rem;
+  border: 1px solid lightgray;
+  border-radius: .3rem;
+  background-color: rgb(225, 224, 224);
+  box-shadow: 2px 1px 3px rgb(222, 214, 214);
+}
+
+.language-list {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  height: 5vh;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* --------------- */
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .navbar ul {
+
+    flex-direction: column;
+
+
+  }
+
+  .navbar li {
+    margin: 5px 0;
+  }
+
+  .navbar {
+
+    background-color: rgb(96, 89, 89);
+    overflow: hidden;
+
+
+  }
+
+  .nav-container {
+    height: 200px;
+    background-color: green;
+
+  }
+
+  .home {
+
+    margin: auto;
+    width: 90vw;
+
+  }
+
+  .profile-container {
+    width: 115px;
+    height: 100px;
+
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    margin: auto;
+    font-size: 1.5rem;
+  }
+
+  .profession {
+    margin: auto;
+    font-size: 1rem;
+  }
+
+
+  button {
+    width: 20vw;
+    font-size: .7rem;
+    padding: .5rem;
+  }
+
+  .cv-container {
+    margin: auto;
+    width: 100vw;
+    padding: 1rem .5rem;
+    display: flex;
+    background-color: lightgrey;
+
+
+  }
+
+  .cv-container h2 {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 70%;
+    padding: 10px;
+
+  }
+
+  /* Form Styles */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact>h2 {
+    align-self: center
+  }
+
+  form {
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form>input {
+    width: 70vw;
+    /* background: green; */
+  }
+
+  form>textarea {
+    width: 70vw;
+    height: 20vh;
+    padding: .5rem;
+
+    font-size: 1rem;
+  }
+
+  .project-container {
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .projects {
+    width: 240px;
+    margin-bottom: 1rem;
+  }
+
+  .project1 {
+    align-self: center;
+  }
+
+  .project3 {
+    align-self: center;
+  }
+
+
+}
+
+
+@media (max-width: 480px) {
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .profession {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 25vw;
+    font-size: .7rem;
+    padding: .5rem;
+  }
+
+
+
+  form {
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form>input {
+    width: 70vw;
+    /* background: green; */
+  }
+
+  form>textarea {
+    width: 70vw;
+    height: 20vh;
+    padding: .5rem;
+
+    font-size: 1rem;
+  }
+}
