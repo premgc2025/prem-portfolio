@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import {url_netflix,url_ems,url_erecord, url_todo}from '../helper';
+import {url_netflix,url_ems,url_erecord, url_todo, url_prashant_hotel}from '../helper';
 
 
 const Projects = () => {
@@ -38,6 +38,7 @@ const Projects = () => {
       <div className="projects project2" ref={project2Ref} >
         <h2>React Projects</h2>
         <ul>
+          <li> <Link to={url_prashant_hotel} target='_blank' > Hotel Booking </Link> </li>
           <li> <Link to="/" target='_blank' > Portfolio </Link> </li>
          
          
