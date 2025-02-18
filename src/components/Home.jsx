@@ -174,7 +174,7 @@ const Home = () => {
 
      
 
-      <motion.button whileHover={{ scale: 1.1 }} onClick={() => {
+      <motion.button className='home-btn' whileHover={{ scale: 1.1 }} onClick={() => {
         handlerButton()
       }} >{start ? "Start" : "Stop"}</motion.button>
     </motion.div>

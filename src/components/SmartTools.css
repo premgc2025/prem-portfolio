@@ -1,0 +1,11 @@
+
+.smart-tools{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3px;
+}
+.smart-header{
+    margin-top: 5rem;
+}

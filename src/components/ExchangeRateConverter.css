@@ -1,0 +1,120 @@
+.converter-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8e37b;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #4c5a68;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.conversion-section {
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  position: relative;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #f7f4f4;
+  z-index: 1;
+}
+
+input {
+  flex: 1;
+  padding: 1rem 1rem 1rem 2.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: .5rem;
+  transition: border-color 0.3s ease;
+  text-indent: 1.5rem;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+select {
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: white;
+  font-size: .9rem;
+  cursor: pointer;
+  width: 250px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+
+
+
+
+.loading {
+  text-align: center;
+  padding: 1rem;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .converter-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    padding-left: 2.5rem;
+    text-indent: 1rem;
+    
+  }
+
+  .currency-symbol {
+    left: 20px;
+   
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1rem;
+  }
+
+  select {
+    font-size: 0.9rem;
+  }
+
+  .swap-button {
+    width: 100%;
+    margin: 1rem auto;
+  }
+}
