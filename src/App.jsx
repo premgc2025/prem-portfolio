@@ -37,7 +37,7 @@ function App() {
               <Route path="/ai" element={<AI />} />
               <Route path="/smarttools" element={<SmartTools/>} >
                 <Route path="dateconverter" element={<DateConverter/>}/>
-                <Route path="imagebackgroundremover" element={<ImageBackgroundRemover/>}/>
+                {/* <Route path="imagebackgroundremover" element={<ImageBackgroundRemover/>}/> */}
                 <Route path="emicalculator" element={<EMICalculator/>}/>
                 <Route path="exchangerateconverter" element={<ExchangeRateConverter/>}/>
                 </Route>
