@@ -1,6 +1,6 @@
 import React from 'react';
 import DateConverter from './DateConverter';
-import ImageBackgroundRemover from './ImageBackgroundRemover';
+// import ImageBackgroundRemover from './ImageBackgroundRemover';
 import EMICalculator from './EMICalculator';
 import { Outlet } from 'react-router-dom';
 import './SmartTools.css'
