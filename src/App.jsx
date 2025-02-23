@@ -12,7 +12,7 @@ import CV from './components/CV'
 import Footer from './components/Footer'
 import SmartTools from './components/SmartTools'
 import DateConverter from './components/DateConverter'
-import ImageBackgroundRemover from './components/ImageBackgroundRemover'
+// import ImageBackgroundRemover from './components/ImageBackgroundRemover'
 import EMICalculator from './components/EMICalculator'
 import ExchangeRateConverter from './components/ExchangeRateConverter'
 

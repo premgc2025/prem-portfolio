@@ -51,7 +51,7 @@ const Navbar = () => {
           <ul className="dropdown-content nav-list" >
             <li><NavLink to="/smarttools/dateconverter">Date Converter</NavLink></li>
             <li><NavLink to="/smarttools/emicalculator">EMI Calculator</NavLink></li>
-            <li><NavLink to="/smarttools/imagebackgroundremover">Image Resize</NavLink></li>
+            {/* <li><NavLink to="/smarttools/imagebackgroundremover">Image Resize</NavLink></li> */}
             <li><NavLink to="/smarttools/exchangerateconverter">Exchange Rate</NavLink></li>
           </ul>
           </div>
